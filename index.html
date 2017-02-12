@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>List Keeping</title>
+  <meta name="description" content="Listing">
+  <meta name="author" content="SitePoint">
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="icon" href="img/logo.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header id="topheader">
+    <h1 id="headerTitle">List Keeping</h1>
+    <section id="status-icons">
+      <div class="statOption">
+       <img id="loadingStat">
+     </div>
+     <div class="statOption">
+      <img id="sortingOption" src="img/sortHor.svg">
+    </div>
+    </section>
+  </header>
+  <div id="wrapper">
+   <section id="list">
+    <div id="title" contenteditable="true">Titel</div>
+    <div id="content" contenteditable="true">Maak een Notitie</div>
+    <div id="toolbar">
+       <div id="colorpanel">
+         <div class="colorball one"></div>
+         <div class="colorball two"></div>
+         <div class="colorball tree"></div>
+         <div class="colorball four"></div>
+       </div>
+     <div id="buttons">
+       <input type="button" value="CANCEL" class="btn" id="cancel">
+       <input type="button" value="SUBMIT" class="btn" id="submit">
+     </div>
+   </div>
+   </section>
+   <main id="listframe">
+    <section class="wrapper-list"></section>
+    <section class="wrapper-list"></section>
+    <section class="wrapper-list"></section>
+   </main>
+ </div><!-- end of wrapper -->
+  <script src="js/script.js"></script>
+</body>
+</html>
